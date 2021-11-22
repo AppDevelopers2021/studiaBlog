@@ -41,6 +41,20 @@
     <meta property="og:image" content="https://studia.blue/images/profile.jpg">
 
     <title></title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWPCCV3R0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9DWPCCV3R0');
+    </script>
+
+    <!-- Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4492852834951301"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -70,36 +84,40 @@
         <div class="body">
             <div class="header">
                 <div class="titletopbar">
-                    <p class="location"><a href="https://blog.studia.blue">블로그</a> &gt;<p id="location"></p></p>
+                    <p class="location"><a href="https://blog.studia.blue">블로그</a> &gt;
+                    <p id="location"></p>
+                    </p>
                 </div>
                 <h1 id="title">Loading Title</h1>
                 <h2 id="subtitle">Please Wait.</h2>
                 <div class="share">
-                    <a class="shareLink copyBtn center" href="javascript:copyURLToClipboard();"><i class="fas fa-link"></i></a>
+                    <a class="shareLink copyBtn center" href="javascript:copyURLToClipboard();"><i
+                            class="fas fa-link"></i></a>
                     <a class="shareLink shareBtn center" href="javascript:share();"><i class="fas fa-share-alt"></i></a>
                     <a class="shareLink mailBtn center" id="mail"><i class="fas fa-envelope"></i></a>
-                    <a class="shareLink printBtn center" href="javascript:window.print();"><i class="fas fa-print"></i></a>
+                    <a class="shareLink printBtn center" href="javascript:window.print();"><i
+                            class="fas fa-print"></i></a>
                 </div>
                 <div class="author">
-                    <img class="profileimg" src="/assets/_profile.png" alt="Profile Image">
+                    <img class="profileimg" src="/assets/profile.png" alt="Profile Image">
                     <div class="author_info">
                         <p class="author_name">작성자 <a id="author" href="google.com">Author</a></p>
                         <p id="author_date">Date</p>
+                    </div>
                 </div>
+                <hr class="divider">
+                <div id="article"></div>
             </div>
-            <hr class="divider">
-            <div id="article"></div>
-        </div>
-    </div>
-
-
-    <footer class="vertical">
-        <div>
-            <p class="footer_logo">studia</p>
-            <p class="footer_sosumi">Copyright &copy; 2021 App Developers.<br>All Rights Reserved.</p>
         </div>
 
-    </footer>
+
+        <footer class="vertical">
+            <div>
+                <p class="footer_logo">studia</p>
+                <p class="footer_sosumi">Copyright &copy; 2021 App Developers.<br>All Rights Reserved.</p>
+            </div>
+
+        </footer>
 </body>
 
 </html>

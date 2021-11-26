@@ -80,7 +80,11 @@ Indented code
 Block code "fences"
 
 ```
-Sample text here...
+// Write Document Body.
+function writeDocumentBody(raw_blogpost) {
+    document.getElementById("article").innerHTML = marked.parse(raw_blogpost);
+    hljs.highlightAll();
+}
 ```
 
 Syntax highlighting
@@ -116,7 +120,7 @@ Right aligned columns
 
 [link with title](http://nodeca.github.io/pica/demo/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+Autoconverted link https://github.com/nodeca/pica
 
 
 ## Images

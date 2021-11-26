@@ -188,8 +188,10 @@ body {
 }
 
 .body {
-    padding: 20px;
-    padding-bottom: 200px;
+    padding: 60px 20px 220px 20px;
+    max-width: 850px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Blogpost CSS */
@@ -214,6 +216,10 @@ body {
 .location a {
     color: black;
     text-decoration: none;
+}
+
+.location a:hover {
+    text-decoration: underline;
 }
 
 #location {
@@ -247,7 +253,6 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
 }
 
 .shareLink {
@@ -259,6 +264,7 @@ body {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .shareLink.copyBtn {
@@ -310,6 +316,10 @@ body {
     font-weight: 600;
 }
 
+#author:hover {
+    text-decoration: underline;
+}
+
 #author_date {
     margin: 0;
     font-size: 15px;
@@ -327,28 +337,27 @@ body {
     font-family: var(--default-font);
     padding: 10px 20px;
     overflow: hidden;
-    margin-bottom: 50px;
     font-size: large;
 }
 
 #article code {
     width: 100%;
     font-family: var(--code-font);
-    background-color: #eee;
     border-radius: 5px;
     padding: 0 3px;
+    background-color: #eee;
 }
 
 #article pre>code {
     display: block;
-    background-color: #eee;
     padding: 10px;
     border-radius: 10px;
+    background-color: #1e1e1e;
 }
 
 #article blockquote {
     border-left: 2px solid #ddd;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
 }
 
 #article a {
@@ -391,8 +400,31 @@ body {
     color: black;
 }
 
+#article h1,
+#article h2 {
+    width: 100%;
+    border-bottom: 1px solid #eaecef;
+    margin: 30px 0 20px 0;
+    padding-bottom: 3px;
+}
+
 #article p {
     margin: 10px 0;
+}
+
+.followus {
+    font-family: var(--default-font);
+    font-size: 17px;
+    font-style: italic;
+}
+
+.followus_link {
+    color: #2291FF;
+    text-decoration: none;
+}
+
+.followus_link:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -416,11 +448,17 @@ footer {
     color: #555;
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 768px) {
     .nav_app,
     .nav_hamburger {
         width: 60px;
+    }
+
+    .body {
+        padding-top: 20px;
+    }
+    #article {
+        padding: 10px 0;
     }
 }
 
@@ -431,5 +469,9 @@ footer {
 
     #navbar {
         position: relative;
+    }
+
+    .body {
+        padding-top: 0;
     }
 }

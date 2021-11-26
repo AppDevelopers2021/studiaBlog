@@ -1,0 +1,24 @@
+# Terms of Conditions
+BY ACCESSING AND USING THIS SERVICE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS AND PROVISIONS OF THIS AGREEMENT. IN ADDITION, WHEN USING THESE PARTICULAR SERVICES, YOU SHALL BE SUBJECT TO ANY POSTED GUIDELINES OR RULES APPLICABLE TO SUCH SERVICES. ANY PARTICIPATION IN THIS SERVICE WILL CONSTITUTE ACCEPTANCE OF THIS AGREEMENT. IF YOU DO NOT AGREE TO ABIDE BY THE ABOVE, PLEASE DO NOT USE THIS SERVICE.
+
+### 1. Privacy Statement
+The following user information is collected, stored, and utilized:
+| User Information |
+| ---------------- |
+| Contact Info.<br>The user's email address. |
+| Credentials<br>The user’s password and other security information used for authenticating. |
+| Analytic Data<br>Country, language, device information, and other information used for analytics. |
+
+App Developers collect this data to create and manage accounts, provide online services, and communicate with users.
+
+### 2. Accuracy Warning
+This site and its components are offered for informational purposes only; this site shall not be responsible or liable for any information transmitted or made available via the site and shall not be responsible or liable for any error or omissions in that information.
+
+### 3. Intellectual Property
+The Site and its original content, features, and functionality are owned by App Developers and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+
+### 4. Termination Clause
+We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with your account. All provisions of this Agreement that, by their nature, should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.
+
+### 5. Notification of Changes
+We reserve the right to change these conditions from time to time as it sees fit and your continued use of the site will signify your acceptance of any adjustment to these terms. If there are any changes to our privacy policy, we will announce that these changes have been made on our home page and other key pages on our site. If there are any changes in how we use our site customers’ Personally Identifiable Information, notification by email will be made to those affected by the change. Any changes to our privacy policy will be posted on our site 30 days prior to these changes taking place. You are therefore advised to re-read this statement on a regular basis.

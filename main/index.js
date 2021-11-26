@@ -57,6 +57,7 @@ function writeConfigInfo(config) {
 // Write Document Body.
 function writeDocumentBody(raw_blogpost) {
     document.getElementById("article").innerHTML = marked.parse(raw_blogpost);
+    hljs.highlightAll();
 }
 
 // Copy Current URL to Clipboard.

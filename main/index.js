@@ -15,8 +15,8 @@ close_nav_button.addEventListener("click", function () {
 // 'Sticky' Navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    var currentScrollPos = Math.max(window.pageYOffset, 0);
+    if (prevScrollpos >= currentScrollPos) {
         navbar.style.top = "0";
     } else {
         navbar.style.top = "-50px";

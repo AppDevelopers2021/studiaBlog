@@ -254,11 +254,15 @@
         }
 
         .title {
-            font-size: 50px;
+            font-size: 60px;
             font-family: var(--default-font);
             position: absolute;
             top: 70px;
             left: 30px;
+        }
+
+        .title span {
+            display: inline-block;
         }
 
         .thumb {
@@ -332,36 +336,24 @@
             color: #555;
         }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #1871CA;
-            }
-
-            .body_wrap {
-                background-color: black;
-                color: white;
-            }
-
-            #navbar {
-                background-color: #1871CA;
-            }
-
-            footer {
-                background-color: #333;
-                border-color: #1871CA;
-            }
-
-            .footer_logo,
-            .footer_sosumi {
-                color: #999;
-            }
-        }
-
         @media screen and (max-width: 400px) {
 
             .nav_app,
             .nav_hamburger {
                 width: 60px;
+            }
+        }
+
+        @media screen and (max-width: 930px) {
+            .intro {
+                height: 670px;
+            }
+
+            .thumb {
+                width: 100%;
+                right: 0;
+                bottom: 0;
+                top: auto;
             }
         }
     </style>
@@ -393,7 +385,7 @@
     <div class="body_wrap">
         <div class="body">
             <div class="intro">
-                <h1 class="title">Android 개발</h1>
+                <h1 class="title">Android <span>개발</span></h1>
                 <svg class="thumb" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="683.76331"
                     height="607.63128" viewBox="0 0 683.76331 607.63128" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path
@@ -496,11 +488,12 @@
                         d="M720.82349,241.20275l-15.02013-.014a2.80434,2.80434,0,1,1,.00523-5.60868l15.02013.014a2.80435,2.80435,0,0,1-.00523,5.60869Z"
                         transform="translate(-258.11835 -146.18436)" fill="#fff" />
                 </svg>
+
             </div>
             <div class="posts">
                 <div class="post_item">
                     <p class="post_date">2021/01/02</p>
-                    <a class="post_title">여기에 글 제목이 들어갑니다.</a>
+                    <a class="post_title" href="https://blog.studia.blue/posts/web">여기에 글 제목이 들어갑니다.</a>
                     <p class="post_desc">글에 대한 설명</p>
                 </div>
             </div>
@@ -534,8 +527,8 @@
         // 'Sticky' Navbar
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
+            var currentScrollPos = Math.max(window.pageYOffset, 0);
+            if (prevScrollpos >= currentScrollPos) {
                 navbar.style.top = "0";
             } else {
                 navbar.style.top = "-50px";

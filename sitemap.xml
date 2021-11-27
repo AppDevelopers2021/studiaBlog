@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+
+        <loc>https://blog.studia.blue/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/notice/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/web/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/ios/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/android/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/firebase/</loc>
+
+        <lastmod>2021-11-27</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/policy/</loc>
+
+        <lastmod>2021-11-26</lastmod>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+
+        <loc>https://blog.studia.blue/posts/notice/20211119-intro-blog/</loc>
+
+        <lastmod>2021-11-19</lastmod>
+
+        <changefreq>daily</changefreq>
+
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

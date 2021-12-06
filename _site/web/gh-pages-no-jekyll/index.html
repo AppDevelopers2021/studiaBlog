@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Favicon Styles-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://studia.blue/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://studia.blue/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://studia.blue/images/favicon-16x16.png">
+    <link rel="mask-icon" href="https://studia.blue/images/safari-pinned-tab.svg" color="#2192ff">
+    <link rel="shortcut icon" href="https://studia.blue/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2192ff">
+    <meta name="msapplication-config" content="https://studia.blue/images/browserconfig.xml">
+    <meta name="theme-color" content="#2192ff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="원촌중학교 1학년 자율동아리 App Developers 입니다.">
+    <meta name="keywords" content="원촌중학교,studia,스튜디아,App Developers,자율동아리">
+
+    <link rel="stylesheet" href="/assets/blogpost/style.css">
+    <script defer src="/assets/blogpost/script.js"></script>
+
+    <meta property="og:title" content="스튜디아 - 노트 정리도 스마트하게!">
+    <meta property="og:description" content="스튜디아 노트를 작성하며 매일 배운 내용을 복습해 보세요.">
+    <meta property="og:image" content="https://studia.blue/images/profile.jpg">
+
+    <title>GitHub Pages에서 sitemap.xml이 404로 나올 때 - STUDIA 블로그</title>
+    <meta name="description" content="깃허브 페이지 사용시 설정법">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWPCCV3R0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9DWPCCV3R0');
+    </script>
+
+    <!-- Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4492852834951301"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <button class="nav_hamburger center">
+            <div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <a class="nav_home" href="https://studia.blue/">studia</a>
+        <a class="nav_app" href="https://studia.blue/app/">앱 열기</a>
+    </div>
+
+    <div id="sidenav">
+        <button id="close_nav">&times;</button>
+        <a href="https://studia.blue/">홈</a>
+<a href="https://studia.blue/about/">App Developers 소개</a>
+<hr class="nav_devide">
+<a href="https://studia.blue/app/">내 캘린더</a>
+<hr class="nav_devide">
+<a href="https://studia.blue/help/">도움말</a>
+    </div>
+
+    <div class="body_wrap">
+        <div class="body">
+            <div class="header">
+                <div class="titletopbar">
+                    <p class="location"><a href="https://blog.studia.blue">블로그</a> &gt;
+                    <a id="location" href="/category/web">web</a>
+                    </p>
+                </div>
+                <h1 id="title">GitHub Pages에서 sitemap.xml이 404로 나올 때</h1>
+                <h2 id="subtitle">깃허브 페이지 사용시 설정법</h2>
+                <div class="share">
+                    <a class="shareLink copyBtn center" href="javascript:copyURLToClipboard();"><i
+                            class="fas fa-link"></i></a>
+                    <a class="shareLink shareBtn center" href="javascript:share();"><i class="fas fa-share-alt"></i></a>
+                    <a class="shareLink mailBtn center" href="mailto:jongwoo@studia.blue" id="mail"><i class="fas fa-envelope"></i></a>
+                    <a class="shareLink printBtn center" href="javascript:window.print();"><i
+                            class="fas fa-print"></i></a>
+                </div>
+                <div class="author">
+                    <img class="profileimg" src="/assets/blogpost/profile.png" alt="Profile Image">
+                    <div class="author_info">
+                        <p class="author_name">작성자 <a id="author" href="mailto:jongwoo@studia.blue">이종우</a></p>
+                        <p id="author_date">2021/11/27</p>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div id="article">
+                    <p><img src="/assets/img/ghpages-404.png" alt="404 Page in GitHub Pages" />
+GitHub Pages를 사용할 때 가끔 이런 일이 일어날 때가 있습니다.</p>
+
+<p><em>“분명 sitemap.xml을 생성하고 push했는데 URL에 들어가면 404라고 뜨네”</em></p>
+
+<p>이는 GitHub Pages를 사용할 때 서버에서 <a href="https://jekyllrb.com/">jekyll</a>을 사용한 것으로 판단하여, 자동으로 코드를 컴파일하여 발생하는 문제입니다. 실제로 jekyll을 사용했다면 문제가 없지만 단순 호스팅 용도로 사용할 경우에는 필요한 파일을 찾지 못할 수 있습니다.</p>
+
+<h2 id="해결법">해결법</h2>
+
+<p>해결 방법은 간단합니다. 프로젝트 폴더 내에</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nojekyll
+</code></pre></div></div>
+<p>이라는 파일을 만들면 됩니다.</p>
+
+<p>내용은 빈 상태로 놔두세요. 이제 깃허브로 <code class="language-plaintext highlighter-rouge">push</code>하게 되면 컴파일 과정을 거치지 않고 파일들이 모두 호스팅됩니다.</p>
+
+                </div>
+                <hr class="divider">
+                <p class="followus">우리는 중학교 1학년 자율동아리입니다. 저희 앱이 궁금하시다면 <a class="followus_link"
+                        href="https://studia.blue">www.studia.blue</a>를 방문해 보세요.</p>
+            </div>
+        </div>
+
+
+        <footer class="vertical">
+            <div>
+                <p class="footer_logo">studia</p>
+                <p class="footer_sosumi">Copyright &copy; 2021 App Developers.<br>All Rights Reserved.</p>
+            </div>
+
+        </footer>
+</body>
+
+</html>

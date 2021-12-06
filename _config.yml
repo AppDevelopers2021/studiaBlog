@@ -1,5 +1,5 @@
 name: STUDIA 블로그
-url: http://blog.studia.blue
+url: https://blog.studia.blue
 baseurl: /
 permalink: /:categories/:title/
 markdown: kramdown

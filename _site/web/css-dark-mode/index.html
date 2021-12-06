@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Favicon Styles-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://studia.blue/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://studia.blue/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://studia.blue/images/favicon-16x16.png">
+    <link rel="mask-icon" href="https://studia.blue/images/safari-pinned-tab.svg" color="#2192ff">
+    <link rel="shortcut icon" href="https://studia.blue/images/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2192ff">
+    <meta name="msapplication-config" content="https://studia.blue/images/browserconfig.xml">
+    <meta name="theme-color" content="#2192ff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/vs2015.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="원촌중학교 1학년 자율동아리 App Developers 입니다.">
+    <meta name="keywords" content="원촌중학교,studia,스튜디아,App Developers,자율동아리">
+
+    <link rel="stylesheet" href="/assets/blogpost/style.css">
+    <script defer src="/assets/blogpost/script.js"></script>
+
+    <meta property="og:title" content="스튜디아 - 노트 정리도 스마트하게!">
+    <meta property="og:description" content="스튜디아 노트를 작성하며 매일 배운 내용을 복습해 보세요.">
+    <meta property="og:image" content="https://studia.blue/images/profile.jpg">
+
+    <title>CSS에서 다크모드 감지하기 - STUDIA 블로그</title>
+    <meta name="description" content="media query를 활용하자">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWPCCV3R0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9DWPCCV3R0');
+    </script>
+
+    <!-- Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4492852834951301"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <button class="nav_hamburger center">
+            <div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </button>
+        <a class="nav_home" href="https://studia.blue/">studia</a>
+        <a class="nav_app" href="https://studia.blue/app/">앱 열기</a>
+    </div>
+
+    <div id="sidenav">
+        <button id="close_nav">&times;</button>
+        <a href="https://studia.blue/">홈</a>
+<a href="https://studia.blue/about/">App Developers 소개</a>
+<hr class="nav_devide">
+<a href="https://studia.blue/app/">내 캘린더</a>
+<hr class="nav_devide">
+<a href="https://studia.blue/help/">도움말</a>
+    </div>
+
+    <div class="body_wrap">
+        <div class="body">
+            <div class="header">
+                <div class="titletopbar">
+                    <p class="location"><a href="https://blog.studia.blue">블로그</a> &gt;
+                    <a id="location" href="/category/web">web</a>
+                    </p>
+                </div>
+                <h1 id="title">CSS에서 다크모드 감지하기</h1>
+                <h2 id="subtitle">media query를 활용하자</h2>
+                <div class="share">
+                    <a class="shareLink copyBtn center" href="javascript:copyURLToClipboard();"><i
+                            class="fas fa-link"></i></a>
+                    <a class="shareLink shareBtn center" href="javascript:share();"><i class="fas fa-share-alt"></i></a>
+                    <a class="shareLink mailBtn center" href="mailto:jongwoo@studia.blue" id="mail"><i class="fas fa-envelope"></i></a>
+                    <a class="shareLink printBtn center" href="javascript:window.print();"><i
+                            class="fas fa-print"></i></a>
+                </div>
+                <div class="author">
+                    <img class="profileimg" src="/assets/blogpost/profile.png" alt="Profile Image">
+                    <div class="author_info">
+                        <p class="author_name">작성자 <a id="author" href="mailto:jongwoo@studia.blue">이종우</a></p>
+                        <p id="author_date">2021/11/27</p>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div id="article">
+                    <p><img src="/assets/img/darkmode.png" alt="Dark Mode" />
+요즘 다크 모드를 사용하는 사람들이 늘고 있습니다. 눈도 덜 아프고 배터리도 오래가기 때문이죠. 웹 사이트에도 다크 모드를 적용할 수 있습니다.</p>
+
+<h2 id="사용하는-방법">사용하는 방법</h2>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c">/* 다크 모드에서 적용되는 스타일 */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>이렇게 하면 끝입니다. 이는 사용자의 시스템 설정을 반영하여 다크 모드를 활성화시킬 수 있습니다.</p>
+
+<p>하나 팁을 드리자면</p>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="p">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nd">:root</span> <span class="p">{</span>
+        <span class="py">--bg-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+        <span class="py">--text-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>이런 식으로 <code class="language-plaintext highlighter-rouge">CSS Variable</code>을 사용하면 인생이 더 편해집니다. 나중에 색상을 바꾸기도 쉽고 말이죠.</p>
+
+                </div>
+                <hr class="divider">
+                <p class="followus">우리는 중학교 1학년 자율동아리입니다. 저희 앱이 궁금하시다면 <a class="followus_link"
+                        href="https://studia.blue">www.studia.blue</a>를 방문해 보세요.</p>
+            </div>
+        </div>
+
+
+        <footer class="vertical">
+            <div>
+                <p class="footer_logo">studia</p>
+                <p class="footer_sosumi">Copyright &copy; 2021 App Developers.<br>All Rights Reserved.</p>
+            </div>
+
+        </footer>
+</body>
+
+</html>

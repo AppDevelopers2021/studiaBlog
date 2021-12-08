@@ -38,6 +38,23 @@
     <title>{{ page.title }} - {{ site.name }}</title>
     <meta name="description" content="{{ page.description }}">
 
+    <script type="application/ld+json">
+        {
+            {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "headline": "{{ page.title }}",
+                "datePublished": "{{ page.date | date_to_xmlschema }}",
+                "dateModified": "{{ page.date | date_to_xmlschema }}",
+                "author": [{
+                    "@type": "Person",
+                    "name": "{{ page.author }}"
+                  }
+                }]
+              }
+        }
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWPCCV3R0"></script>
     <script>

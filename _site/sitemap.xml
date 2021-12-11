@@ -12,6 +12,22 @@
 
     
     <url>
+        <loc>http://localhost:4000/notice/comments/</loc>
+        
+        <lastmod>2021-12-10T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/web/media-queries/</loc>
         
         <lastmod>2021-12-06T00:00:00+09:00</lastmod>
@@ -76,9 +92,41 @@
     </url>
     
     <url>
-        <loc>http://localhost:4000/policy/policy/</loc>
+        <loc>http://localhost:4000/policy/policy-en/</loc>
         
         <lastmod>2021-11-26T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/policy/privacy-statement/</loc>
+        
+        <lastmod>2021-11-25T00:00:00+09:00</lastmod>
+        
+
+        
+        <changefreq>weekly</changefreq>
+        
+
+        
+        <priority>0.5</priority>
+        
+
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/policy/policy/</loc>
+        
+        <lastmod>2021-11-25T00:00:00+09:00</lastmod>
         
 
         

@@ -24,7 +24,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="원촌중학교 1학년 자율동아리 App Developers 입니다.">
     <meta name="keywords" content="원촌중학교,studia,스튜디아,App Developers,자율동아리">
 
     <link rel="stylesheet" href="/assets/blogpost/style.css">
@@ -34,14 +33,34 @@
     <meta property="og:description" content="스튜디아 노트를 작성하며 매일 배운 내용을 복습해 보세요.">
     <meta property="og:image" content="https://studia.blue/images/profile.jpg">
 
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
+
     <title>Android Studio 설치하기 - STUDIA 블로그</title>
     <meta name="description" content="안드로이드 스튜디오 초보자용 가이드">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Android Studio 설치하기",
+            "datePublished": "2021-11-28T00:00:00+09:00",
+            "dateModified": "2021-11-28T00:00:00+09:00",
+            "author": {
+                "@type": "Person",
+                "name": "Jacob Lim"
+            }
+        }
+        }
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DWPCCV3R0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-9DWPCCV3R0');
@@ -80,7 +99,7 @@
             <div class="header">
                 <div class="titletopbar">
                     <p class="location"><a href="https://blog.studia.blue">블로그</a> &gt;
-                    <a id="location" href="/category/android">android</a>
+                        <a id="location" href="/category/android">android</a>
                     </p>
                 </div>
                 <h1 id="title">Android Studio 설치하기</h1>
@@ -89,14 +108,16 @@
                     <a class="shareLink copyBtn center" href="javascript:copyURLToClipboard();"><i
                             class="fas fa-link"></i></a>
                     <a class="shareLink shareBtn center" href="javascript:share();"><i class="fas fa-share-alt"></i></a>
-                    <a class="shareLink mailBtn center" href="mailto:jacoblim@studia.blue" id="mail"><i class="fas fa-envelope"></i></a>
+                    <a class="shareLink mailBtn center" href="mailto:jacoblim@studia.blue" id="mail"><i
+                            class="fas fa-envelope"></i></a>
                     <a class="shareLink printBtn center" href="javascript:window.print();"><i
                             class="fas fa-print"></i></a>
                 </div>
                 <div class="author">
                     <img class="profileimg" src="/assets/blogpost/profile.png" alt="Profile Image">
                     <div class="author_info">
-                        <p class="author_name">작성자 <a id="author" href="mailto:jacoblim@studia.blue">Jacob Lim</a></p>
+                        <p class="author_name">작성자 <a id="author" href="mailto:jacoblim@studia.blue">Jacob Lim</a>
+                        </p>
                         <p id="author_date">2021/11/28</p>
                     </div>
                 </div>
@@ -134,6 +155,10 @@
                 <hr class="divider">
                 <p class="followus">우리는 중학교 1학년 자율동아리입니다. 저희 앱이 궁금하시다면 <a class="followus_link"
                         href="https://studia.blue">www.studia.blue</a>를 방문해 보세요.</p>
+
+                <script src="https://utteranc.es/client.js" repo="AppDevelopers2021/studiaBlog" issue-term="pathname"
+                    label="comment" theme="github-light" crossorigin="anonymous" async>
+                </script>
             </div>
         </div>
 

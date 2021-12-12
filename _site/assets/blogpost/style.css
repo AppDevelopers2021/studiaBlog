@@ -25,6 +25,10 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.utterances {
+    max-width: 100% !important;
+}
+
 /* Align Items With FLEX */
 .vertical {
     display: flex;

@@ -346,6 +346,7 @@ body {
     padding: 10px 20px;
     overflow: hidden;
     font-size: large;
+    line-height: 150%;
 }
 
 #article code {

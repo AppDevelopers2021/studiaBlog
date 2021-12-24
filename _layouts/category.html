@@ -386,6 +386,9 @@
 
             </div>
             <div class="posts">
+                <div class="post_item">
+                    {% include ad_infeed.html %}
+                </div>
                 {% assign category = page.which %}
                 {% for post in site.categories[category] %}
                 <div class="post_item">

@@ -50,4 +50,10 @@ function share() {
     }
 }
 
-hljs.highlightAll();
+// Highlight Code Block
+document.querySelectorAll('div.highlighter-rouge').forEach(function (block) {
+    var language = block.className.replace(/^.*language-/, '').replace(/\s+.*$/, '');
+    var code = block.getElementsByTagName("code")[0];
+    code.className = "language-" + language;
+    hljs.highlightElement(code);
+})

@@ -11,6 +11,8 @@ categories: web
 ![Dark Mode](/assets/img/darkmode.png)
 요즘 다크 모드를 사용하는 사람들이 늘고 있습니다. 눈도 덜 아프고 배터리도 오래가기 때문이죠. 웹 사이트에도 다크 모드를 적용할 수 있습니다.
 
+{% include ad.html %}
+
 ## 사용하는 방법
 ```css
 @media (prefers-color-scheme: dark) {

@@ -56,6 +56,8 @@ categories: web
 ```
 아름답네요.
 
+{% include ad.html %}
+
 # Media Query 종류
 자, 이제 미디어 쿼리 종류를 알아봅시다.
 
@@ -123,6 +125,8 @@ Responsive Layout은 기기의 화면 크기에 맞춰 레이아웃이 달라지
 }
 ```
 자주 쓰이지는 않지만, 이 코드는 기기가 가로 모드 (landscape) 인지 세로 모드 (portrait) 인지 감지합니다.
+
+{% include ad.html %}
 
 # 지원 범위
 [https://caniuse.com/css-mediaqueries](https://caniuse.com/css-mediaqueries)

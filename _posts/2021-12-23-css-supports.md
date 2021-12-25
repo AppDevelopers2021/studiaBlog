@@ -14,6 +14,8 @@ CSS `backdrop-filter`로 블러 효과를 앱에 활용하고 싶었는데, 비�
 
 이런 상황에서 사용할 수 있는 CSS 기능 쿼리가 바로 `@supports`입니다. 브라우저가 특정 CSS 구문을 지원하는지를 확인하고, 그렇지 않다면 fallback CSS를 적용할 수 있습니다.
 
+{% include ad.html %}
+
 ## `@supports` Syntax
 
 ``` css
@@ -52,6 +54,8 @@ if(CSS.supports("not ((backdrop-filter:blur(5px)) or (-webkit-backdrop-filter:bl
 ```
 
 [`selector()`](https://css-tricks.com/supports-selector/)을 이용하면 특성 CSS selector가 지원되는지 여부를 확인할 수 있습니다.
+
+{% include ad.html %}
 
 ## 실사용 예시
 

@@ -25,8 +25,7 @@ window.open("https://mysite.com", "_blank")
 
 HTML, JS에서 `target` 속성을 `_blank`로 지정하면 링크를 새 탭에서 열 수 있습니다.
 
-
-----------------
+{% include ad.html %}
 
 ## a 태그의 `target` 속성
 

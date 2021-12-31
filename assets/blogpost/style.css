@@ -349,6 +349,23 @@ body {
     line-height: 150%;
 }
 
+
+.fuckyou {
+    width: 100%;
+    background-color: #ffbeb8;
+    border: 2px solid #ff9a91;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.fuckyou p {
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--default-font);
+    text-align: center;
+    margin: 0;
+}
+
 #article code {
     width: 100%;
     font-family: var(--code-font);

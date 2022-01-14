@@ -13,7 +13,7 @@ GitHub Pages를 사용할 때 가끔 이런 일이 일어날 때가 있습니다
 
 *"분명 sitemap.xml을 생성하고 push했는데 URL에 들어가면 404라고 뜨네"*
 
-이는 GitHub Pages를 사용할 때 서버에서 [jekyll](https://jekyllrb.com/)을 사용한 것으로 판단하여, 자동으로 코드를 컴파일하여 발생하는 문제입니다. 실제로 jekyll을 사용했다면 문제가 없지만 단순 호스팅 용도로 사용할 경우에는 필요한 파일을 찾지 못할 수 있습니다.
+이는 GitHub Pages를 사용할 때 서버에서 [jekyll](https://jekyllrb.com/)을 사용한 것으로 판단하여, 자동으로 빌드를 실행하여 발생하는 문제입니다. 실제로 jekyll을 사용했다면 문제가 없지만 단순 호스팅 용도로 사용할 경우에는 필요한 파일을 찾지 못할 수 있습니다.
 
 {% include ad.html %}
 

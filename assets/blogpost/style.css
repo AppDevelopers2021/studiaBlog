@@ -346,7 +346,6 @@ body {
     padding: 10px 20px;
     overflow: hidden;
     font-size: large;
-    line-height: 150%;
 }
 
 
@@ -436,6 +435,7 @@ body {
 
 #article p {
     margin: 10px 0;
+    line-height: 150%;
 }
 
 .followus {

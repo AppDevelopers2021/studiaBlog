@@ -42,7 +42,7 @@ categories: web
 
 그래프로 나타내면 이렇습니다.
 
-![이거 로딩 안되면 댓글 주세요 (나만 안되나...)](/assets/img/animation-graph.jpg)
+![Animation Graph](/assets/img/animation-graph.jpg)
 
 `opacity`는 직선으로 되어 있으니 쉽게 만들 수 있지만 `translateY`는 그래프가 저렇게 요상하게 생겨서 생각보다 만들기 어렵습니다. 다행히도, GSAP에서 우리를 위한 Easing Function을 만들어 주었네요. [GreenSock Ease Visualizer](https://greensock.com/docs/v2/Easing) 에 가면 우리가 원하는 그래프가 있습니다.
 

@@ -37,6 +37,11 @@
 
     <title>{{ page.title }} - {{ site.name }}</title>
     <meta name="description" content="{{ page.description }}">
+    <meta name="author" content="{{ page.author }}">
+    <meta name="date" content="{{ page.date | date_to_xmlschema }}">
+    <meta http-equiv="reply-to" content="{{ page.email }}">
+    <meta http-equiv="email" content="{{ page.email }}">
+    <meta http-equiv="copyright" content="Copyright (c) 2021-{{ site.time | date: '%Y' }} App Developers">
 
     {% if page.use_math %}
     <script type="text/javascript" id="MathJax-script" async
@@ -155,7 +160,7 @@
         <footer class="vertical">
             <div>
                 <p class="footer_logo">studia</p>
-                <p class="footer_sosumi">Copyright &copy; 2021-2022 App Developers.<br>All Rights Reserved.</p>
+                <p class="footer_sosumi">Copyright &copy; 2021-{{ site.time | date: '%Y' }} App Developers.<br>All Rights Reserved.</p>
             </div>
 
         </footer>

@@ -24,42 +24,6 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-// Fetch Blogpost Info.
-fetch('./blogpost.json').then((response) => {
-    if (!response.ok) {
-        throw new Error("HTTP error " + response.status);
-    }
-    return response.json();
-}).then((data) => {
-    writeConfigInfo(data);
-});
-fetch('./blogpost.md').then((response) => {
-    if (!response.ok) {
-        throw new Error("HTTP error " + response.status);
-    }
-    return response.text();
-}).then((data) => {
-    writeDocumentBody(data);
-});
-
-// Set Up Config Info.
-function writeConfigInfo(config) {
-    document.title = config.title;
-    document.getElementById("title").innerText = config.title;
-    document.getElementById("subtitle").innerText = config.description;
-    document.getElementById("location").innerText = config.location;
-    document.getElementById("mail").href = "mailto:" + config.author.email;
-    document.getElementById("author").innerText = config.author.name;
-    document.getElementById("author").href = "mailto:" + config.author.email;
-    document.getElementById("author_date").innerText = config.date;
-}
-
-// Write Document Body.
-function writeDocumentBody(raw_blogpost) {
-    document.getElementById("article").innerHTML = marked.parse(raw_blogpost);
-    hljs.highlightAll();
-}
-
 // Copy Current URL to Clipboard.
 function copyURLToClipboard() {
     var dummy = document.createElement("input");

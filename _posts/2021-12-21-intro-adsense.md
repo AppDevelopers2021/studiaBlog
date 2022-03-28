@@ -5,7 +5,7 @@ layout: blogpost
 author: 이종우
 email: jongwoo@studia.blue
 date: 2021/12/21
-categories: adsense
+categories: web
 ---
 
 > _"잠자는 동안에도 돈이 들어오는 방법을 찾아내지 못한다면 <br>당신을 죽을 때까지 일을 해야만 할 것이다."_

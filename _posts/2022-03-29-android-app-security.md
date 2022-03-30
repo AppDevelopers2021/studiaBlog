@@ -16,6 +16,8 @@ Android 앱 개발자라면 앱에서는 보안이 생명이라는 것을 체감
 ![ImmuniWeb](/assets/img/immuniweb.png)  
 [ImmuniWeb](https://www.immuniweb.com/mobile/)은 제가 앱을 만들며 자주 사용했던 보안 체크 사이트입니다. 안드로이드 앱 스토어(Play Store 등)에서 앱을 찾아서 보안을 체크하거나 `APK` 파일 등을 업로드하면 무료로 보안 검사를 받을 수 있습니다. 이곳에서는 **OWASP Mobile Top 10 Test, Mobile App Privacy Check, Static & Dynamic Mobile Scan** 등의 서비스를 제공합니다.
 
+{% include ad.html %}
+
 ## 직접 실천할 수 있는 것들
 위에서 말씀드렸던 ImmuniWeb에서도 말하지만 AndroidManifest.xml를 ```android:allowBackup="false"```  
 와 같이 설정해주셔야 합니다. 이러한 사소한 것들도 보안에 영향을 미치기 때문입니다. 또한 개인적으로 `SQL` 데이터베이스는 사용하는 것을 자제하는 것을 권고드립니다.

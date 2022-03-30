@@ -38,6 +38,8 @@ ProgressView("Some Other Text", value: someOtherValue, total: 200)
 
 첫 번째 인수의 값으로 문자열을 입력하면 ProgressView의 이름처럼 사용할 수 있습니다. value 인자는 나타낼 값을, total 인자는 최댓값을 나타냅니다. progressViewStyle을 이용하면 `tint` 색상 (로딩 바의 색상)을 다른 색으로 바꿀 수도 있습니다.
 
+{% include ad.html %}
+
 # Circular ProgressView
 
 ```swift

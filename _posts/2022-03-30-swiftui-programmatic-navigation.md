@@ -10,6 +10,8 @@ categories: ios
 
 SwiftUI에서 내비게이번은 `NavigationView`와 `NavigationLink`를 사용해서 이루어집니다. 그러나 실제 개발에서는 스위프트 코드만으로 내비게이션을 해야 할 일이 종종 있습니다. 예를 들어, 유저를 로그인한 다음 메인 뷰로 이동하는 경우 프로그래매틱한 방법으로 내비게이션을 해야 합니다. 이때 Programmatic Navigation이라고 불리는 방법을 이용합니다.
 
+{% include ad.html %}
+
 ## 간단한 방법
 
 가장 간단한 방법은 다음과 같습니다.
@@ -24,6 +26,8 @@ NavigationLink(destination: Text("View #2"), isActive: $goToViewTwo) { EmptyView
 ```
 
 `NavigationLink` 의 `isActive` 속성을 `Boolean` 변수로 지정해, 변수의 값이 참일 때 뷰가 이동되도록 했습니다. 이때, `NavigationLink` 내부가 비어있으면 오류가 나기 때문에 `EmptyView` 를 사용했습니다.
+
+{% include ad.html %}
 
 ## 여러 개 사용할 때는
 

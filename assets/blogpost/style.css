@@ -378,6 +378,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     background-color: #1e1e1e;
+    line-height: 27px;
 }
 
 #article blockquote {
@@ -435,7 +436,7 @@ body {
 
 #article p {
     margin: 10px 0;
-    line-height: 150%;
+    line-height: 29px;
 }
 
 .followus {

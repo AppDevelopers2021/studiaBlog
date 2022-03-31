@@ -1,6 +1,6 @@
 ---
 title: SwiftUI 당겨서 새로고침 (Pull to Refresh)
-description: 앱에서 스위프트 코드만으로 뷰를 이동하는 방법을 알아봅니다.
+description: 리스트와 스크롤뷰에서 Pull to Refresh을 사용하는 방법을 알아봅니다.
 layout: blogpost
 author: 이종우
 email: jongwoo@studia.blue

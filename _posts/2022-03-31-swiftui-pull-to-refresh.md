@@ -10,6 +10,8 @@ categories: ios
 
 iOS 15부터 SwiftUI 앱에 당겨서 새로고침 (Pull to Refresh) 제스처를 넣는 것이 굉장히 간편해졌습니다. 이 글에서는 리스트에 당겨서 새로고침을 넣는 것 리스트 외의 뷰에서 당겨서 새로고침을 넣는 것을 알아보겠습니다.
 
+{% include ad.html %}
+
 ## 리스트에서 당겨서 새로고침
 
 다음과 같은 예시 앱이 있다고 하겠습니다. 
@@ -47,6 +49,8 @@ List(numbers, id: \.self) { number in
 `.refreshable {` 뒤에 새로고침 시 실행할 코드를 입력하면 SwiftUI가 새로고침에 필요한 나머지 부분을 알아서 해결해줍니다. 생각보다 간단하게 해결됐습니다. 이런 식으로요.
 
 <img style="max-width: 450px; display: block; margin: auto;" src="/assets/img/refreshable.gif">
+
+{% include ad.html %}
 
 ## 만약 리스트가 아니라면
 
@@ -224,6 +228,8 @@ struct NumbersView: View {
 <img style="max-width: 450px; display: block; margin: auto;" src="/assets/img/scrollview-refresh.gif">
 
 이런 식으로 ScrollView에서도 Pull to Refresh를 사용할 수 있습니다.
+
+{% include ad.html %}
 
 ## 마치며
 

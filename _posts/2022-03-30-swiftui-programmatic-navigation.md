@@ -8,7 +8,7 @@ date: 2022/03/30
 categories: ios
 ---
 
-SwiftUI에서 내비게이번은 `NavigationView`와 `NavigationLink`를 사용해서 이루어집니다. 그러나 실제 개발에서는 스위프트 코드만으로 내비게이션을 해야 할 일이 종종 있습니다. 예를 들어, 유저를 로그인한 다음 메인 뷰로 이동하는 경우 프로그래매틱한 방법으로 내비게이션을 해야 합니다. 이때 Programmatic Navigation이라고 불리는 방법을 이용합니다.
+SwiftUI에서 내비게이션은 `NavigationView`와 `NavigationLink`를 사용해서 이루어집니다. 그러나 실제 개발에서는 스위프트 코드만으로 내비게이션을 해야 할 일이 종종 있습니다. 예를 들어, 유저를 로그인한 다음 메인 뷰로 이동하는 경우 프로그래매틱한 방법으로 내비게이션을 해야 합니다. 이때 Programmatic Navigation이라고 불리는 방법을 이용합니다.
 
 {% include ad.html %}
 

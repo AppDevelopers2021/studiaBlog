@@ -3,7 +3,7 @@ title: Raspberry Pi 처음 시작하기
 description: Raspberry Pi 구성품과 OS 설치하는 방법을 알아봅니다.
 layout: blogpost
 author: 윤준석
-email: jongwoo@studia.blue
+email: joonseokyoon@studia.blue
 date: 2022/04/11
 categories: hardware
 ---

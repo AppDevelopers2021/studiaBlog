@@ -13,6 +13,8 @@ categories: hardware
 Raspberry Pi는 영국의 라즈베리 파이(Raspberry Pi) 재단에서 만든 초소형 싱글보드 컴퓨터(SBC)입니다.
 교육용 프로젝트의 일환으로 개발되었기에 매우 저렴하고 우수한 성능을 가지고 있습니다.
 
+{% include ad.html %}
+
 # 본격적으로 Raspberry Pi 시작하기
 
 ![Raspberry Pi 4 Model B](/assets/img/pi-out-of-box.jpeg)
@@ -21,6 +23,8 @@ Raspberry Pi는 영국의 라즈베리 파이(Raspberry Pi) 재단에서 만든 
 바로 가장 케이블과 마이크로 sd 카드가 없기 때문인데요.
 케이블은 꼭 mini HDMI - HDMI 사시면되고 
 마이크로 sd카드는 본인 용도에 따라 16-64기가 micro-sd카드사면됩니다.
+
+{% include ad.html %}
 
 # OS 설치
 

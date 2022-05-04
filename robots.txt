@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.studia.blue/sitemap.xml
+#DaumWebMasterTool:f6d3c085b871bba82795a2195f859e0f545d680ae533b04b7da096c39225e728:LUAUW3H1/eLe2+9EvtjiCA==
